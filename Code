@@ -1,0 +1,62 @@
+import random
+#string concatenation
+#youtuber = "NAME"
+#print(f"Subscribe to {youtuber}")
+#adjective = input("Enter an adjective:")
+#Verb1 = input("Verb: ")
+#adj = input("Adjective:")
+#Celebrity = input("Celebrity: ")
+
+#madlib = (f"Programming is so {adjective}! It makes me so excited all of the time because I hate to {Verb1}. Stay hydrated and {adj} too just like {Celebrity} !") 
+
+#print(madlib)
+
+# random number generation
+
+def guess(x):
+    random_number = random.randint(1,x)
+    guess = 0
+    while guess != random_number:
+      guess = int(input(f"Enter a number between 1 and {x}: "))
+      if guess == random_number:
+          print(f"Whoohoo youve correctly guessed the number which was {random_number}")
+          break
+      elif guess < random_number:
+          print("Too Low")
+      elif guess > random_number:
+          print("Too High")           
+guess(10)
+
+#def computer_guess(x):
+    #low = 1
+    #high = x
+    #feedback = ""
+    #while feedback != "c":
+        #if low != high:
+          #  guess = random.randint(low,high)
+        #elif guess == low:
+         #   feedback = input(f"Is {guess} too high (H) , too low (L) , or correct (C)?".lower)
+        ##if feedback == "h":
+       #     high = guess - 1
+      #  elif feedback == "l":
+     #       low = guess + 1
+
+    #print(f"The PC guessed correctly, {guess} !")
+ 
+#computer_guess(x)
+
+#import time 
+
+#Animals = ["Cats",
+  #        "Dogs"
+    #      , "Sheep"
+   #       , "Parrots", 
+     #     "Frogs", 
+      #    "Cows" , 
+       #   "Chickens", 
+        #  "Fish"]
+
+#for Animal in Animals:
+ #   for x in range(9):
+  #     print(Animal)
+   #    time.sleep(0.4)
